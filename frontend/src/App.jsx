@@ -14,9 +14,11 @@ export default function App() {
 
   const handleSearch = async ({ needText, location, lowCostOnly, openNowOnly }) => {
     try {
-      const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+      //const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
-      const response = await fetch(`${API_BASE_URL}/analyze`, {
+      //const response = await fetch(`${API_BASE_URL}/analyze`, 
+      const response = await fetch(`https://carecompass-08ha.onrender.com/analyze`,
+      {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
