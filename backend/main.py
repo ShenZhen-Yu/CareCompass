@@ -10,7 +10,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://care-compass-azure.vercel.app/",
+        "https://care-compass-jum04ysk7-ck2578947252-1408s-projects.vercel.app/",
     ],
     allow_credentials=True,
     allow_methods=["*"],
