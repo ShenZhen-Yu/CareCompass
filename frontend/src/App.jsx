@@ -14,21 +14,20 @@ export default function App() {
 
   const handleSearch = async ({ needText, location, lowCostOnly, openNowOnly }) => {
     try {
-      //const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+     const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
-      //const response = await fetch(`${API_BASE_URL}/analyze`, 
-      const response = await fetch(`https://carecompass-1.onrender.com/analyze`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          need_text: needText,
-          location,
-          low_cost_only: lowCostOnly,
-          open_now_only: openNowOnly,
-        }),
+    const response = await fetch(`${API_BASE_URL}/analyze`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        need_text: needText,
+        location,
+        low_cost_only: lowCostOnly,
+        open_now_only: openNowOnly,
+      }),
+    });
       });
 
       const data = await response.json();
