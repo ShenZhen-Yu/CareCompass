@@ -17,7 +17,7 @@ export default function App() {
       //const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
       //const response = await fetch(`${API_BASE_URL}/analyze`, 
-      const response = await fetch(`https://carecompass-08ha.onrender.com/analyze`,
+      const response = await fetch(`https://carecompass-1.onrender.com/analyze`,
       {
         method: "POST",
         headers: {
